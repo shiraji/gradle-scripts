@@ -1,0 +1,16 @@
+apply plugin: 'maven-publish'
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId GROUP
+            artifactId ARTIFACTID
+            version "${VERSION}-SNAPSHOT"
+        }
+    }
+    repositories {
+        maven {
+            mavenLocal()
+        }
+    }
+}
