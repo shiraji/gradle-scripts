@@ -3,6 +3,7 @@ apply plugin: 'maven-publish'
 publishing {
     publications {
         maven(MavenPublication) {
+            artifact "${project.buildDir}/outputs/aar/${project.name}-release.aar"
             groupId GROUPID
             artifactId ARTIFACTID
             version "${VERSION}-SNAPSHOT"
