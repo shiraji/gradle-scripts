@@ -3,7 +3,7 @@ apply plugin: 'maven-publish'
 publishing {
     publications {
         maven(MavenPublication) {
-            groupId GROUP
+            groupId GROUPID
             artifactId ARTIFACTID
             version "${VERSION}-SNAPSHOT"
         }
